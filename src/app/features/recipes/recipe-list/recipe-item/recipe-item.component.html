@@ -1,0 +1,11 @@
+<a href="#" (click)="onRecipeSelect()" class="list-group-item clearfix" >
+  <div class="pull-left">
+    <!-- <h4 class="list-group-item-heading">{{ recipe['name'] }}</h4> same as array notation vs . notation for referencing Properties of an Object -->
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
+  </div>
+  <span class="pull-right">
+    <!-- <img src="{{recipe['imagePath']}}" same as String Interpolation vs Property Binding for img src -->
+    <img [src]="recipe.imagePath" alt="" class="img-responsive" style="max-height: 50px;">
+  </span>
+</a>
