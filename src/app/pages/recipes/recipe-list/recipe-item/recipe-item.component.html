@@ -1,4 +1,7 @@
-<a href="#" (click)="onRecipeSelect()" class="list-group-item clearfix" >
+<a
+[routerLink]="[index]"
+routerLinkActive="active"
+style="cursor: pointer;" class="list-group-item clearfix" >
   <div class="pull-left">
     <!-- <h4 class="list-group-item-heading">{{ recipe['name'] }}</h4> same as array notation vs . notation for referencing Properties of an Object -->
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
